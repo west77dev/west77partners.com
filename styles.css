@@ -97,7 +97,7 @@ img {
 .nav__link--outlined {
   border: 1px solid rgba(255, 255, 255, 0.7);
   padding: 10px 24px;
-  border-radius: 28px;
+  border-radius: 0;
   font-weight: 400;
   transition: background 0.3s, color 0.3s, border-color 0.3s;
 }
@@ -302,7 +302,7 @@ img {
   letter-spacing: 2.5px;
   text-transform: uppercase;
   border: none;
-  border-radius: 32px;
+  border-radius: 0;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   text-align: center;
@@ -376,7 +376,7 @@ img {
   align-items: center;
   justify-content: center;
   background: #fff;
-  border-radius: 16px;
+  border-radius: 0;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
   max-width: 1000px;
   margin: 0 auto;
@@ -476,7 +476,7 @@ img {
   width: 100%;
   height: 480px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 0;
 }
 
 /* ========== Opportunity ========== */
@@ -519,7 +519,7 @@ img {
 .opportunity__card {
   background: #fff;
   border: none;
-  border-radius: 16px;
+  border-radius: 0;
   padding: 40px 32px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
@@ -630,7 +630,7 @@ img {
 .why__stat-card {
   background: #fff;
   padding: 36px 28px;
-  border-radius: 16px;
+  border-radius: 0;
   display: flex;
   flex-direction: column;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
@@ -1083,7 +1083,7 @@ img {
 
   .trust-bar__inner {
     flex-direction: column;
-    border-radius: 12px;
+    border-radius: 0;
   }
 
   .trust-bar__divider {
