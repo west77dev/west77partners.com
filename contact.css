@@ -39,6 +39,8 @@
 
 .offices__card-content {
   padding: 0 32px;
+  padding-top: 36px;
+  position: relative;
 }
 
 .offices__card:first-child .offices__card-content {
@@ -50,7 +52,9 @@
 }
 
 .offices__badge {
-  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
   font-family: 'Inter', sans-serif;
   font-size: 10px;
   font-weight: 500;
@@ -59,7 +63,10 @@
   color: #c8a45a;
   background: rgba(200, 164, 90, 0.08);
   padding: 4px 12px;
-  margin-bottom: 14px;
+}
+
+.offices__card:not(:first-child) .offices__card-content {
+  padding-top: 36px;
 }
 
 .offices__city {
