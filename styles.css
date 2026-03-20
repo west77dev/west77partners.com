@@ -227,6 +227,34 @@ img {
   gap: 16px;
 }
 
+.hero__scroll-arrow {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  transition: color 0.3s, border-color 0.3s, transform 0.3s;
+  animation: heroFadeUp 1s 1.2s cubic-bezier(0.16, 1, 0.3, 1) both, bounceSubtle 2.4s 2.5s ease-in-out infinite;
+}
+
+.hero__scroll-arrow:hover {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+@keyframes bounceSubtle {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(6px); }
+}
+
 /* ========== Icons (Lucide) ========== */
 .icon {
   width: 32px;
