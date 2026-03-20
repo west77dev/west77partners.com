@@ -250,7 +250,7 @@
 
 .about-stats__number {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 36px;
+  font-size: 44px;
   font-weight: 500;
   color: #fff;
   margin-bottom: 12px;
@@ -276,7 +276,8 @@
 /* ========== CEO Quote ========== */
 .quote-section {
   padding: 120px 0;
-  background: linear-gradient(180deg, #f6f6f4 0%, #fafaf9 100%);
+  background: #fff;
+  border-top: 1px solid #eee;
 }
 
 .quote-section__inner {
@@ -431,14 +432,19 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  padding: 20px 24px;
-  transition: border-color 0.3s;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px 0;
+  transition: none;
+}
+
+.market-callout__highlight:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .market-callout__highlight:hover {
-  border-color: rgba(200, 164, 90, 0.2);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 .market-callout__highlight-icon {
@@ -545,7 +551,8 @@
 /* ========== Careers ========== */
 .careers {
   padding: 120px 0;
-  background: linear-gradient(180deg, #f6f6f4 0%, #fafaf9 100%);
+  background: #fff;
+  border-top: 1px solid #eee;
 }
 
 .careers__inner {
@@ -576,10 +583,15 @@
 }
 
 .careers__detail-card {
-  background: #fff;
-  padding: 32px;
-  border: 1px solid #e8e8e8;
+  background: transparent;
+  padding: 28px 0;
+  border: none;
+  border-bottom: 1px solid #eee;
   border-radius: 0;
+}
+
+.careers__detail-card:first-child {
+  border-top: 1px solid #eee;
 }
 
 .careers__detail-title {

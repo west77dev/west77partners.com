@@ -8,34 +8,45 @@
 .offices__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 0;
   margin-bottom: 48px;
 }
 
 .offices__card {
   display: flex;
   gap: 0;
-  background: #f8f8f7;
-  border: 1px solid #e8e8e8;
+  background: transparent;
+  border: none;
+  border-right: 1px solid #eee;
   border-radius: 0;
-  overflow: hidden;
-  transition: border-color 0.4s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
+  overflow: visible;
+  transition: none;
+}
+
+.offices__card:last-child {
+  border-right: none;
 }
 
 .offices__card:hover {
-  border-color: #c8a45a;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  border-color: #eee;
+  transform: none;
+  box-shadow: none;
 }
 
 .offices__card-accent {
-  width: 4px;
-  background: #c8a45a;
-  flex-shrink: 0;
+  display: none;
 }
 
 .offices__card-content {
-  padding: 32px;
+  padding: 0 32px;
+}
+
+.offices__card:first-child .offices__card-content {
+  padding-left: 0;
+}
+
+.offices__card:last-child .offices__card-content {
+  padding-right: 0;
 }
 
 .offices__badge {
@@ -105,7 +116,8 @@
 /* ========== Contact Form ========== */
 .contact-form-section {
   padding: 100px 0;
-  background: linear-gradient(180deg, #f6f6f4 0%, #fafaf9 100%);
+  background: #fff;
+  border-top: 1px solid #eee;
 }
 
 .contact-form__inner {
@@ -199,20 +211,33 @@
 .departments__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 0;
 }
 
 .departments__card {
-  padding: 36px;
-  border: 1px solid #e8e8e8;
+  padding: 0 36px;
+  border: none;
+  border-right: 1px solid #eee;
   border-radius: 0;
-  transition: border-color 0.4s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
+  transition: none;
+}
+
+.departments__card:last-child {
+  border-right: none;
+}
+
+.departments__card:first-child {
+  padding-left: 0;
+}
+
+.departments__card:last-child {
+  padding-right: 0;
 }
 
 .departments__card:hover {
-  border-color: #c8a45a;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  border-color: #eee;
+  transform: none;
+  box-shadow: none;
 }
 
 .departments__card-title {
@@ -250,7 +275,26 @@
 @media (max-width: 1024px) {
   .offices__grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 0;
+  }
+
+  .offices__card {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+  }
+
+  .offices__card:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .offices__card-content,
+  .offices__card:first-child .offices__card-content,
+  .offices__card:last-child .offices__card-content {
+    padding: 0;
   }
 
   .contact-form__inner {
@@ -264,7 +308,23 @@
 
   .departments__grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 0;
+  }
+
+  .departments__card {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding: 24px 0;
+  }
+
+  .departments__card:first-child {
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .departments__card:last-child {
+    border-bottom: none;
+    padding-right: 0;
   }
 }
 
