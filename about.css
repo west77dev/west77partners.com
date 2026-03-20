@@ -276,7 +276,7 @@
 /* ========== CEO Quote ========== */
 .quote-section {
   padding: 120px 0;
-  background: #f8f8f7;
+  background: linear-gradient(180deg, #f6f6f4 0%, #fafaf9 100%);
 }
 
 .quote-section__inner {
@@ -329,6 +329,7 @@
   width: 100%;
   height: 400px;
   background: #d8dde2;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -509,6 +510,7 @@
   width: 100%;
   aspect-ratio: 3/4;
   background: #e8ecf0;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -543,7 +545,7 @@
 /* ========== Careers ========== */
 .careers {
   padding: 120px 0;
-  background: #f8f8f7;
+  background: linear-gradient(180deg, #f6f6f4 0%, #fafaf9 100%);
 }
 
 .careers__inner {
@@ -577,6 +579,7 @@
   background: #fff;
   padding: 32px;
   border: 1px solid #e8e8e8;
+  border-radius: 12px;
 }
 
 .careers__detail-title {

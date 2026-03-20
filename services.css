@@ -66,7 +66,7 @@
 }
 
 .svc-section--alt {
-  background: #f8f8f7;
+  background: linear-gradient(180deg, #f6f6f4 0%, #fafaf9 100%);
 }
 
 .svc-section--dark {
@@ -140,8 +140,9 @@
   gap: 20px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
   padding: 24px;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .svc-acq__highlight:hover {
@@ -183,6 +184,7 @@
   gap: 0;
   background: #fff;
   border: 1px solid #e8e8e8;
+  border-radius: 12px;
   transition: border-color 0.4s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
   overflow: hidden;
 }
@@ -238,13 +240,16 @@
 .svc-inv-card {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
   padding: 40px 32px;
-  transition: background 0.3s, border-color 0.3s;
+  transition: background 0.3s, border-color 0.3s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
 }
 
 .svc-inv-card:hover {
   background: rgba(255, 255, 255, 0.07);
   border-color: rgba(200, 164, 90, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
 .svc-inv-card__icon {
@@ -340,6 +345,7 @@
 .svc-construction__stat {
   background: #1e2837;
   padding: 36px 28px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
 }
@@ -414,11 +420,14 @@
   padding: 32px;
   background: #fff;
   border: 1px solid #e8e8e8;
-  transition: border-color 0.3s;
+  border-radius: 12px;
+  transition: border-color 0.4s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
 }
 
 .svc-am-card:hover {
   border-color: #c8a45a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
 }
 
 .svc-am-card__num {

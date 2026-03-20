@@ -17,12 +17,15 @@
   gap: 0;
   background: #f8f8f7;
   border: 1px solid #e8e8e8;
+  border-radius: 12px;
   overflow: hidden;
-  transition: border-color 0.3s;
+  transition: border-color 0.4s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
 }
 
 .offices__card:hover {
   border-color: #c8a45a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
 }
 
 .offices__card-accent {
@@ -102,7 +105,7 @@
 /* ========== Contact Form ========== */
 .contact-form-section {
   padding: 100px 0;
-  background: #f8f8f7;
+  background: linear-gradient(180deg, #f6f6f4 0%, #fafaf9 100%);
 }
 
 .contact-form__inner {
@@ -140,8 +143,9 @@
   color: #333;
   background: #fff;
   border: 1px solid #d8d8d8;
+  border-radius: 8px;
   outline: none;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s;
   letter-spacing: 0.2px;
 }
 
@@ -154,6 +158,7 @@
 .contact-form__input:focus,
 .contact-form__textarea:focus {
   border-color: #c8a45a;
+  box-shadow: 0 0 0 3px rgba(200, 164, 90, 0.1);
 }
 
 .contact-form__textarea {
@@ -179,6 +184,7 @@
   width: 100%;
   height: 560px;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 /* ========== Departments ========== */
@@ -199,11 +205,14 @@
 .departments__card {
   padding: 36px;
   border: 1px solid #e8e8e8;
-  transition: border-color 0.3s;
+  border-radius: 12px;
+  transition: border-color 0.4s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
 }
 
 .departments__card:hover {
   border-color: #c8a45a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
 }
 
 .departments__card-title {

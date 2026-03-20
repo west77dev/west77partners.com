@@ -97,6 +97,7 @@ img {
 .nav__link--outlined {
   border: 1px solid rgba(255, 255, 255, 0.7);
   padding: 10px 24px;
+  border-radius: 28px;
   font-weight: 400;
   transition: background 0.3s, color 0.3s, border-color 0.3s;
 }
@@ -273,8 +274,9 @@ img {
   letter-spacing: 2.5px;
   text-transform: uppercase;
   border: none;
+  border-radius: 32px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   text-align: center;
 }
 
@@ -299,7 +301,7 @@ img {
 .btn--outline-white {
   background: transparent;
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .btn--outline-white:hover {
@@ -311,7 +313,7 @@ img {
 .btn--outline-light {
   background: transparent;
   color: #90a4ae;
-  border: 1px solid rgba(144, 164, 174, 0.4);
+  border: 1px solid rgba(144, 164, 174, 0.3);
 }
 
 .btn--outline-light:hover {
@@ -322,6 +324,14 @@ img {
 .btn--sm {
   padding: 10px 24px;
   font-size: 10px;
+}
+
+.btn--dark:hover {
+  box-shadow: 0 4px 20px rgba(30, 40, 55, 0.3);
+}
+
+.btn--white:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* ========== Trust Bar ========== */
@@ -431,11 +441,12 @@ img {
   width: 100%;
   height: 480px;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 /* ========== Opportunity ========== */
 .opportunity {
-  background: #1e2837;
+  background: linear-gradient(180deg, #1a2433 0%, #1e2837 30%, #1e2837 70%, #1a2433 100%);
   padding: 120px 0;
 }
 
@@ -473,6 +484,7 @@ img {
 .opportunity__card {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
   padding: 40px 32px;
   transition: background 0.4s, border-color 0.4s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
 }
@@ -508,7 +520,7 @@ img {
 /* ========== Why West77 ========== */
 .why {
   padding: 120px 0;
-  background: #f8f8f7;
+  background: linear-gradient(180deg, #f6f6f4 0%, #fafaf9 100%);
 }
 
 .why__grid {
@@ -583,6 +595,7 @@ img {
 .why__stat-card {
   background: #1e2837;
   padding: 36px 28px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;

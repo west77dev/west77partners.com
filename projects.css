@@ -6,7 +6,7 @@
 }
 
 .proj-section--alt {
-  background: #f8f8f7;
+  background: linear-gradient(180deg, #f6f6f4 0%, #fafaf9 100%);
 }
 
 .proj-section--dark {
@@ -74,6 +74,7 @@
   width: 100%;
   aspect-ratio: 4/3;
   background: #d8dde2;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,6 +105,7 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   padding: 5px 12px;
+  border-radius: 20px;
 }
 
 .proj-card__info {
@@ -206,12 +208,15 @@
 .case-study-card {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
   overflow: hidden;
-  transition: border-color 0.3s;
+  transition: border-color 0.4s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
 }
 
 .case-study-card:hover {
   border-color: rgba(200, 164, 90, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
 .case-study-card__img-placeholder {
@@ -300,6 +305,7 @@
 .team-exp__highlight {
   background: #1e2837;
   padding: 32px 24px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
 }
