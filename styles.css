@@ -362,64 +362,43 @@ img {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* ========== Trust Bar ========== */
-.trust-bar {
-  background: transparent;
-  padding: 0;
-  position: relative;
-  margin-top: -48px;
-  z-index: 3;
+/* ========== Stats Strip ========== */
+.stats-strip {
+  padding: 64px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
-.trust-bar__inner {
+.stats-strip__inner {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  border-radius: 0;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
-  max-width: 1000px;
-  margin: 0 auto;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
-.trust-bar__item {
+.stats-strip__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 36px 48px;
+  text-align: center;
 }
 
-.trust-bar__icon {
-  color: #c8a45a;
-  width: 22px;
-  height: 22px;
-  stroke-width: 1.25;
-  margin-bottom: 10px;
-  opacity: 0.7;
-}
-
-.trust-bar__number {
+.stats-strip__number {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 48px;
+  font-weight: 400;
   color: #1a1a1a;
   letter-spacing: 0.5px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  line-height: 1;
 }
 
-.trust-bar__label {
+.stats-strip__label {
   font-family: 'Inter', sans-serif;
   font-size: 11px;
   font-weight: 400;
-  color: #999;
+  color: #aaa;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-}
-
-.trust-bar__divider {
-  width: 1px;
-  height: 40px;
-  background: #e8e8e8;
 }
 
 /* ========== Section Titles ========== */
@@ -437,9 +416,18 @@ img {
   color: #fff;
 }
 
+.section-title--lg {
+  font-size: 52px;
+}
+
 /* ========== About ========== */
 .about {
-  padding: 120px 0;
+  padding: 140px 0 100px;
+}
+
+.about__intro {
+  max-width: 700px;
+  margin-bottom: 64px;
 }
 
 .about__grid {
@@ -460,10 +448,10 @@ img {
 }
 
 .about__description {
-  color: #4a4a4a;
-  font-size: 15px;
+  color: #555;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 1.9;
+  line-height: 2;
   margin-bottom: 24px;
   letter-spacing: 0.2px;
 }
@@ -476,19 +464,24 @@ img {
   width: 100%;
   height: 480px;
   object-fit: cover;
-  border-radius: 0;
 }
 
 /* ========== Opportunity ========== */
 .opportunity {
-  background: #fff;
-  padding: 140px 0 120px;
+  padding: 120px 0;
+  border-top: 1px solid #eee;
 }
 
-.opportunity__header {
-  text-align: center;
-  max-width: 640px;
-  margin: 0 auto 64px;
+.opportunity__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.opportunity__left {
+  position: sticky;
+  top: 140px;
 }
 
 .opportunity__eyebrow {
@@ -503,66 +496,76 @@ img {
 
 .opportunity__intro {
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
-  color: #888;
-  line-height: 1.8;
+  color: #777;
+  line-height: 1.9;
   letter-spacing: 0.2px;
+  margin-top: 8px;
 }
 
-.opportunity__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
+.opportunity__right {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
-.opportunity__card {
-  background: #fff;
-  border: none;
-  border-radius: 0;
-  padding: 40px 32px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
+.opportunity__item {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 36px 0;
+  border-bottom: 1px solid #eee;
 }
 
-.opportunity__card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+.opportunity__item:first-child {
+  padding-top: 0;
 }
 
-.opportunity__icon {
-  margin-bottom: 24px;
+.opportunity__item:last-child {
+  border-bottom: none;
 }
 
-.opportunity__card-title {
+.opportunity__item-num {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 22px;
+  font-size: 32px;
+  font-weight: 400;
+  color: #c8a45a;
+  line-height: 1;
+  min-width: 40px;
+  padding-top: 2px;
+}
+
+.opportunity__item-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 24px;
   font-weight: 500;
   color: #1a1a1a;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   letter-spacing: 0.3px;
 }
 
-.opportunity__card-text {
+.opportunity__item-text {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #777;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 /* ========== Why West77 ========== */
 .why {
   padding: 120px 0;
-  background: #fff;
-  border-top: 1px solid #f0f0f0;
+  background: #1e2837;
 }
 
-.why__grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 80px;
-  align-items: start;
+.why__header {
+  max-width: 680px;
+  margin-bottom: 72px;
+}
+
+.why__header .section-title {
+  color: #fff;
 }
 
 .why__eyebrow {
@@ -576,97 +579,36 @@ img {
 }
 
 .why__description {
-  color: #4a4a4a;
-  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.9;
-  margin-bottom: 40px;
   letter-spacing: 0.2px;
 }
 
-.why__features {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
+.why__columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 64px;
 }
 
-.why__feature {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
+.why__col .icon {
+  margin-bottom: 20px;
 }
 
-.why__feature-accent {
-  display: block;
-  width: 3px;
-  min-height: 100%;
-  background: #c8a45a;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.why__feature-title {
+.why__col-title {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
-  color: #1a1a1a;
-  margin-bottom: 4px;
+  color: #fff;
+  margin-bottom: 12px;
 }
 
-.why__feature-text {
+.why__col-text {
   font-size: 14px;
   font-weight: 300;
-  color: #666;
-  line-height: 1.6;
-}
-
-.why__stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  padding-top: 12px;
-}
-
-.why__stat-card {
-  background: #fff;
-  padding: 36px 28px;
-  border-radius: 0;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
-}
-
-.why__stat-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
-}
-
-.why__stat-icon {
-  color: #c8a45a;
-  width: 20px;
-  height: 20px;
-  stroke-width: 1.25;
-  margin-bottom: 12px;
-  opacity: 0.6;
-}
-
-.why__stat-number {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 36px;
-  font-weight: 500;
-  color: #1a1a1a;
-  margin-bottom: 8px;
-  letter-spacing: 0.5px;
-}
-
-.why__stat-label {
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 300;
-  color: #999;
-  letter-spacing: 0.5px;
-  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.8;
 }
 
 /* ========== National Footprint ========== */
@@ -1000,22 +942,32 @@ img {
     font-size: 48px;
   }
 
-  .opportunity__grid {
-    grid-template-columns: repeat(2, 1fr);
+  .section-title--lg {
+    font-size: 42px;
   }
 
-  .why__grid {
+  .opportunity__layout {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 48px;
   }
 
-  .trust-bar__inner {
+  .opportunity__left {
+    position: static;
+  }
+
+  .why__columns {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .stats-strip__inner {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 32px;
   }
 
-  .trust-bar__item {
-    padding: 28px 32px;
+  .stats-strip__item {
+    min-width: 140px;
   }
 }
 
@@ -1076,31 +1028,16 @@ img {
     gap: 12px;
   }
 
-  .trust-bar {
-    margin-top: -32px;
-    padding: 0 16px;
-  }
-
-  .trust-bar__inner {
-    flex-direction: column;
-    border-radius: 0;
-  }
-
-  .trust-bar__divider {
-    width: 40px;
-    height: 1px;
-  }
-
-  .trust-bar__item {
-    padding: 20px;
-  }
-
   .section-title {
     font-size: 32px;
   }
 
+  .section-title--lg {
+    font-size: 36px;
+  }
+
   .about {
-    padding: 80px 0;
+    padding: 80px 0 60px;
   }
 
   .about__grid {
@@ -1112,20 +1049,25 @@ img {
     height: 300px;
   }
 
+  .stats-strip {
+    padding: 48px 0;
+  }
+
+  .stats-strip__inner {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .stats-strip__number {
+    font-size: 36px;
+  }
+
   .opportunity {
     padding: 80px 0;
   }
 
-  .opportunity__grid {
-    grid-template-columns: 1fr;
-  }
-
   .why {
     padding: 80px 0;
-  }
-
-  .why__stats {
-    grid-template-columns: 1fr 1fr;
   }
 
   .footprint {
