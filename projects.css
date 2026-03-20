@@ -1,0 +1,391 @@
+/* ========== Projects Page Styles ========== */
+
+/* ========== Shared Section ========== */
+.proj-section {
+  padding: 100px 0;
+}
+
+.proj-section--alt {
+  background: #f8f8f7;
+}
+
+.proj-section--dark {
+  background: #1e2837;
+}
+
+.proj-section__header {
+  margin-bottom: 48px;
+}
+
+.proj-section__header--center {
+  text-align: center;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56px;
+}
+
+.proj-section__accent-line {
+  width: 40px;
+  height: 3px;
+  background: #c8a45a;
+  margin: 16px auto 0;
+}
+
+.proj-section__intro {
+  font-size: 15px;
+  font-weight: 300;
+  color: #666;
+  line-height: 1.9;
+  margin-top: 24px;
+  letter-spacing: 0.2px;
+}
+
+.proj-section__intro--light {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* ========== Project Grid ========== */
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.proj-grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.proj-card {
+  transition: transform 0.3s;
+}
+
+.proj-card:hover {
+  transform: translateY(-4px);
+}
+
+.proj-card__img-wrap {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.proj-card__img-placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: #d8dde2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8899aa;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  transition: filter 0.3s;
+}
+
+.proj-card:hover .proj-card__img-placeholder {
+  filter: brightness(0.95);
+}
+
+.proj-card__img-placeholder--render {
+  background: #c5cdd5;
+}
+
+.proj-card__badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(30, 40, 55, 0.85);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+}
+
+.proj-card__info {
+  padding: 0 4px;
+}
+
+.proj-card__name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 2px;
+  letter-spacing: 0.3px;
+}
+
+.proj-card__location {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: #888;
+  letter-spacing: 0.3px;
+}
+
+/* ========== Pipeline Map ========== */
+.pipeline-map {
+  margin-bottom: 72px;
+}
+
+.pipeline-map__placeholder {
+  background: #f0f2f4;
+  padding: 48px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+.pipeline-map__svg {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 24px;
+  display: block;
+  opacity: 0.5;
+}
+
+.pipeline-map__label {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  letter-spacing: 0.5px;
+}
+
+/* ========== Future Markets ========== */
+.future-markets {
+  padding-top: 16px;
+}
+
+.future-markets__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 32px;
+  letter-spacing: 0.5px;
+}
+
+.future-markets__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.future-markets__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.future-markets__list li {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #4a4a4a;
+  padding: 9px 0;
+  border-bottom: 1px solid #f0f0f0;
+  letter-spacing: 0.2px;
+}
+
+.future-markets__list li:last-child {
+  border-bottom: none;
+}
+
+/* ========== Case Studies ========== */
+.case-studies__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.case-study-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.case-study-card:hover {
+  border-color: rgba(200, 164, 90, 0.2);
+}
+
+.case-study-card__img-placeholder {
+  width: 100%;
+  aspect-ratio: 16/10;
+  background: #2a3a4e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5a6a7a;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.case-study-card__content {
+  padding: 28px;
+}
+
+.case-study-card__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 4px;
+  letter-spacing: 0.3px;
+}
+
+.case-study-card__location {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: #6b7b8d;
+  letter-spacing: 0.3px;
+}
+
+.case-study-card__accent {
+  width: 32px;
+  height: 2px;
+  background: #c8a45a;
+  margin: 16px 0;
+}
+
+.case-study-card__text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.7;
+}
+
+/* ========== Team Experience ========== */
+.team-exp__inner {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.team-exp__text {
+  font-size: 15px;
+  font-weight: 300;
+  color: #4a4a4a;
+  line-height: 1.9;
+  margin-bottom: 24px;
+  letter-spacing: 0.2px;
+}
+
+.team-exp__text--quote {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: #666;
+  margin-top: 8px;
+  line-height: 1.6;
+}
+
+.team-exp__highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding-top: 8px;
+}
+
+.team-exp__highlight {
+  background: #1e2837;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-exp__highlight-number {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+.team-exp__highlight-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #6b7b8d;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 1024px) {
+  .proj-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .proj-grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .case-studies__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .team-exp__inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .future-markets__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .proj-section {
+    padding: 80px 0;
+  }
+
+  .proj-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .proj-grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .future-markets__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .team-exp__highlights {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pipeline-map__placeholder {
+    padding: 32px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .proj-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proj-grid--4 {
+    grid-template-columns: 1fr;
+  }
+
+  .future-markets__grid {
+    grid-template-columns: 1fr;
+  }
+}

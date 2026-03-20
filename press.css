@@ -1,0 +1,288 @@
+/* ========== Press Page Styles ========== */
+
+/* ========== Featured Story ========== */
+.press-featured {
+  padding: 100px 0;
+}
+
+.press-featured__inner {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.press-featured__badge {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c8a45a;
+  background: rgba(200, 164, 90, 0.08);
+  padding: 4px 14px;
+  margin-bottom: 20px;
+}
+
+.press-featured__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.press-featured__meta {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: #888;
+  letter-spacing: 0.3px;
+  margin-bottom: 24px;
+}
+
+.press-featured__text {
+  font-size: 15px;
+  font-weight: 300;
+  color: #4a4a4a;
+  line-height: 1.9;
+  margin-bottom: 32px;
+  letter-spacing: 0.2px;
+}
+
+.press-featured__img-placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: #d8dde2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8899aa;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/* ========== Press Sections ========== */
+.press-section {
+  padding: 100px 0;
+}
+
+.press-section--alt {
+  background: #f8f8f7;
+}
+
+.press-section__header {
+  margin-bottom: 48px;
+}
+
+/* ========== Press Release Cards ========== */
+.press-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.press-card {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 28px 0;
+  border-bottom: 1px solid #e8e8e8;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.press-card:first-child {
+  border-top: 1px solid #e8e8e8;
+}
+
+.press-card:hover {
+  background: rgba(200, 164, 90, 0.03);
+}
+
+.press-card__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 64px;
+  flex-shrink: 0;
+}
+
+.press-card__month {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #c8a45a;
+}
+
+.press-card__day {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.1;
+}
+
+.press-card__year {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #999;
+  min-height: 16px;
+}
+
+.press-card__content {
+  flex: 1;
+}
+
+.press-card__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+  letter-spacing: 0.3px;
+  line-height: 1.3;
+}
+
+.press-card__source {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #c8a45a;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.press-card__excerpt {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #666;
+  line-height: 1.6;
+}
+
+.press-card__arrow {
+  font-size: 20px;
+  color: #c8a45a;
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.press-card:hover .press-card__arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+/* ========== Media Coverage Grid ========== */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.media-card {
+  display: block;
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  text-decoration: none;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.media-card:hover {
+  border-color: #c8a45a;
+  transform: translateY(-3px);
+}
+
+.media-card__pub {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #c8a45a;
+  margin-bottom: 14px;
+}
+
+.media-card__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.35;
+  letter-spacing: 0.3px;
+}
+
+/* ========== Press CTA ========== */
+.press-cta {
+  background: #1e2837;
+  padding: 100px 0;
+}
+
+.press-cta__inner {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.press-cta__text {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 1024px) {
+  .press-featured__inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .media-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .press-featured,
+  .press-section,
+  .press-cta {
+    padding: 80px 0;
+  }
+
+  .press-featured__title {
+    font-size: 28px;
+  }
+
+  .press-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 24px 0;
+  }
+
+  .press-card__date {
+    flex-direction: row;
+    gap: 8px;
+    align-items: baseline;
+  }
+
+  .press-card__arrow {
+    display: none;
+  }
+
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+}
