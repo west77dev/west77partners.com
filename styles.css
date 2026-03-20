@@ -364,15 +364,22 @@ img {
 
 /* ========== Trust Bar ========== */
 .trust-bar {
-  background: #1e2837;
+  background: transparent;
   padding: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  position: relative;
+  margin-top: -48px;
+  z-index: 3;
 }
 
 .trust-bar__inner {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .trust-bar__item {
@@ -395,7 +402,7 @@ img {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 32px;
   font-weight: 500;
-  color: #fff;
+  color: #1a1a1a;
   letter-spacing: 0.5px;
   margin-bottom: 4px;
 }
@@ -404,7 +411,7 @@ img {
   font-family: 'Inter', sans-serif;
   font-size: 11px;
   font-weight: 400;
-  color: #6b7b8d;
+  color: #999;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -412,7 +419,7 @@ img {
 .trust-bar__divider {
   width: 1px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #e8e8e8;
 }
 
 /* ========== Section Titles ========== */
@@ -474,8 +481,8 @@ img {
 
 /* ========== Opportunity ========== */
 .opportunity {
-  background: linear-gradient(180deg, #1a2433 0%, #1e2837 30%, #1e2837 70%, #1a2433 100%);
-  padding: 120px 0;
+  background: #fff;
+  padding: 140px 0 120px;
 }
 
 .opportunity__header {
@@ -498,7 +505,7 @@ img {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.55);
+  color: #888;
   line-height: 1.8;
   letter-spacing: 0.2px;
 }
@@ -510,18 +517,17 @@ img {
 }
 
 .opportunity__card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 12px;
+  background: #fff;
+  border: none;
+  border-radius: 16px;
   padding: 40px 32px;
-  transition: background 0.4s, border-color 0.4s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
 }
 
 .opportunity__card:hover {
-  background: rgba(255, 255, 255, 0.07);
-  border-color: rgba(200, 164, 90, 0.2);
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
 }
 
 .opportunity__icon {
@@ -532,7 +538,7 @@ img {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 22px;
   font-weight: 500;
-  color: #fff;
+  color: #1a1a1a;
   margin-bottom: 12px;
   letter-spacing: 0.3px;
 }
@@ -541,14 +547,15 @@ img {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.5);
+  color: #777;
   line-height: 1.7;
 }
 
 /* ========== Why West77 ========== */
 .why {
   padding: 120px 0;
-  background: linear-gradient(180deg, #f6f6f4 0%, #fafaf9 100%);
+  background: #fff;
+  border-top: 1px solid #f0f0f0;
 }
 
 .why__grid {
@@ -621,17 +628,18 @@ img {
 }
 
 .why__stat-card {
-  background: #1e2837;
+  background: #fff;
   padding: 36px 28px;
-  border-radius: 12px;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
 }
 
 .why__stat-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
 }
 
 .why__stat-icon {
@@ -647,7 +655,7 @@ img {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 36px;
   font-weight: 500;
-  color: #fff;
+  color: #1a1a1a;
   margin-bottom: 8px;
   letter-spacing: 0.5px;
 }
@@ -656,7 +664,7 @@ img {
   font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-weight: 300;
-  color: #6b7b8d;
+  color: #999;
   letter-spacing: 0.5px;
   line-height: 1.5;
 }
@@ -1068,8 +1076,14 @@ img {
     gap: 12px;
   }
 
+  .trust-bar {
+    margin-top: -32px;
+    padding: 0 16px;
+  }
+
   .trust-bar__inner {
     flex-direction: column;
+    border-radius: 12px;
   }
 
   .trust-bar__divider {
