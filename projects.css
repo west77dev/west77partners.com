@@ -135,28 +135,18 @@
   margin-bottom: 72px;
 }
 
-.pipeline-map__placeholder {
-  background: #f0f2f4;
-  padding: 48px;
-  text-align: center;
-  border: 1px solid #e0e0e0;
-}
-
 .pipeline-map__svg {
-  max-width: 600px;
   width: 100%;
   height: auto;
-  margin: 0 auto 24px;
   display: block;
-  opacity: 0.5;
 }
 
-.pipeline-map__label {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #666;
-  letter-spacing: 0.5px;
+.pipeline-map__svg circle {
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.pipeline-map__svg circle:hover {
+  opacity: 0.7;
 }
 
 /* ========== Future Markets ========== */
