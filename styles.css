@@ -1,17 +1,3 @@
-/* ========== TEMPORARY: Hide placeholder images ========== */
-/* Remove this block to restore all placeholder images */
-.team-card__img-placeholder,
-.team-card__img,
-.quote-section__img-placeholder,
-.quote-section__img,
-.quote-section__image,
-.proj-card__img-placeholder,
-.case-study-card__img-placeholder,
-.press-featured__img-placeholder {
-  display: none !important;
-}
-/* ========== END placeholder hide ========== */
-
 /* ========== Reset & Base ========== */
 *, *::before, *::after {
   margin: 0;
