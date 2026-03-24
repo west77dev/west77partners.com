@@ -1,5 +1,10 @@
 /* ========== Projects Page Styles ========== */
 
+/* Projects hero crop */
+.page-hero .page-hero__bg {
+  background-position: center 75%;
+}
+
 /* ========== Shared Section ========== */
 .proj-section {
   padding: 100px 0;
@@ -68,6 +73,20 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.proj-card__thumb {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s, transform 0.4s;
+}
+
+.proj-card:hover .proj-card__thumb {
+  filter: brightness(0.9);
+  transform: scale(1.02);
 }
 
 .proj-card__img-placeholder {
@@ -127,6 +146,140 @@
   font-weight: 300;
   color: #888;
   letter-spacing: 0.3px;
+}
+
+/* ========== Project Detail Modal ========== */
+.proj-detail {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: none;
+  overflow-y: auto;
+}
+
+.proj-detail.active {
+  display: block;
+}
+
+.proj-detail__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.proj-detail__panel {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 60px auto;
+  background: #fff;
+  min-height: 50vh;
+}
+
+.proj-detail__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.proj-detail__close:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.proj-detail__hero {
+  width: 100%;
+}
+
+.proj-detail__img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.proj-detail__body {
+  padding: 48px;
+}
+
+.proj-detail__location {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c8a45a;
+  margin-bottom: 12px;
+}
+
+.proj-detail__title {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.proj-detail__summary {
+  font-size: 15px;
+  font-weight: 300;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.proj-detail__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.proj-detail__gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.proj-detail__gallery img:hover {
+  opacity: 0.85;
+}
+
+.proj-card {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .proj-detail__panel {
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  .proj-detail__body {
+    padding: 32px 24px;
+  }
+
+  .proj-detail__gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .proj-detail__img {
+    height: 260px;
+  }
 }
 
 /* ========== Pipeline Map ========== */
@@ -220,6 +373,13 @@
   border-color: rgba(255, 255, 255, 0.08);
   transform: none;
   box-shadow: none;
+}
+
+.case-study-card__img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  display: block;
 }
 
 .case-study-card__img-placeholder {

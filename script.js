@@ -118,8 +118,29 @@ document.querySelectorAll('.count-up').forEach(el => {
   counterObserver.observe(el);
 });
 
+// ========== Hero Video Carousel ==========
+const heroVideos = document.querySelectorAll('.hero__video');
+if (heroVideos.length > 1) {
+  let currentVideo = 0;
+  heroVideos[0].play();
+
+  heroVideos.forEach((video) => {
+    video.addEventListener('ended', () => {
+      video.classList.remove('hero__video--active');
+      currentVideo = (currentVideo + 1) % heroVideos.length;
+      const next = heroVideos[currentVideo];
+      next.currentTime = 0;
+      next.play();
+      next.classList.add('hero__video--active');
+    });
+  });
+} else if (heroVideos.length === 1) {
+  heroVideos[0].loop = true;
+  heroVideos[0].play();
+}
+
 // ========== Parallax Hero ==========
-const heroImg = document.querySelector('.hero__img');
+const heroImg = document.querySelector('.hero__video--active');
 if (heroImg) {
   let ticking = false;
   window.addEventListener('scroll', () => {
@@ -127,7 +148,9 @@ if (heroImg) {
       requestAnimationFrame(() => {
         const scrolled = window.scrollY;
         if (scrolled < window.innerHeight) {
-          heroImg.style.transform = `translateY(${scrolled * 0.25}px) scale(1.05)`;
+          heroVideos.forEach(v => {
+            v.style.transform = `translateY(${scrolled * 0.15}px)`;
+          });
         }
         ticking = false;
       });

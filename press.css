@@ -1,5 +1,10 @@
 /* ========== Press Page Styles ========== */
 
+/* Press hero crop */
+.page-hero .page-hero__bg {
+  background-position: center 75%;
+}
+
 /* ========== Featured Story ========== */
 .press-featured {
   padding: 100px 0;
@@ -66,6 +71,13 @@
   font-family: 'Inter', sans-serif;
   font-size: 13px;
   font-weight: 300;
+}
+
+.press-featured__img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
 }
 
 /* ========== Press Sections ========== */

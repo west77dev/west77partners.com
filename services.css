@@ -2,7 +2,7 @@
 
 /* ========== Overview ========== */
 .svc-overview {
-  padding: 120px 0;
+  padding: 90px 0;
 }
 
 .svc-overview__inner {
@@ -62,7 +62,7 @@
 
 /* ========== Service Sections ========== */
 .svc-section {
-  padding: 120px 0;
+  padding: 90px 0;
 }
 
 .svc-section--alt {
@@ -623,7 +623,7 @@
 @media (max-width: 768px) {
   .svc-overview,
   .svc-section {
-    padding: 120px 0;
+    padding: 90px 0;
   }
 
   .svc-timeline {

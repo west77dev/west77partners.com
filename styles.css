@@ -142,7 +142,16 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 80% 35%;
+  object-position: center center;
+}
+
+.hero__video {
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+.hero__video--active {
+  opacity: 1;
 }
 
 .hero__overlay {
@@ -230,7 +239,7 @@ img {
 
 .hero__scroll-arrow {
   position: absolute;
-  bottom: 36px;
+  bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -364,63 +373,77 @@ img {
 }
 
 /* ========== Stats Strip ========== */
-/* ========== Trust Bar (floating stats) ========== */
+/* ========== Trust Bar (integrated into hero) ========== */
 .trust-bar {
-  background: transparent;
-  padding: 0;
-  position: relative;
-  margin-top: -48px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 3;
+  padding: 0;
+  background: linear-gradient(to bottom, rgba(15, 23, 35, 0.0), rgba(15, 23, 35, 0.7));
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .trust-bar__inner {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
-  max-width: 1000px;
+  align-items: stretch;
+  justify-content: flex-start;
+  background: none;
+  box-shadow: none;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .trust-bar__item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  padding: 36px 48px;
+  gap: 12px;
+  padding: 24px 0;
+  margin-right: 32px;
 }
 
 .trust-bar__icon {
   color: #c8a45a;
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   stroke-width: 1.25;
-  margin-bottom: 10px;
-  opacity: 0.7;
+  flex-shrink: 0;
+  opacity: 0.8;
+}
+
+.trust-bar__item-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .trust-bar__number {
   font-family: 'Roboto', 'Helvetica Neue', sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 300;
-  color: #1a1a1a;
+  color: #fff;
   letter-spacing: 0.5px;
-  margin-bottom: 4px;
+  line-height: 1.2;
 }
 
 .trust-bar__label {
   font-family: 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 400;
-  color: #999;
+  color: rgba(255, 255, 255, 0.45);
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
 .trust-bar__divider {
   width: 1px;
-  height: 40px;
-  background: #e8e8e8;
+  height: 28px;
+  flex-shrink: 0;
+  margin-right: 32px;
+  background: rgba(255, 255, 255, 0.15);
 }
 
 /* ========== Section Titles ========== */
@@ -444,7 +467,7 @@ img {
 
 /* ========== About ========== */
 .about {
-  padding: 140px 0 100px;
+  padding: 100px 0 80px;
 }
 
 .about__intro {
@@ -490,7 +513,7 @@ img {
 
 /* ========== Opportunity ========== */
 .opportunity {
-  padding: 120px 0;
+  padding: 90px 0;
   border-top: 1px solid #eee;
 }
 
@@ -577,7 +600,7 @@ img {
 
 /* ========== Why West77 ========== */
 .why {
-  padding: 120px 0;
+  padding: 90px 0;
   background: #1e2837;
 }
 
@@ -635,7 +658,7 @@ img {
 
 /* ========== National Footprint ========== */
 .footprint {
-  padding: 120px 0;
+  padding: 90px 0;
   background: #fff;
 }
 
@@ -700,7 +723,7 @@ img {
 /* ========== CTA ========== */
 .cta {
   position: relative;
-  padding: 120px 0;
+  padding: 90px 0;
   overflow: hidden;
 }
 
@@ -1069,7 +1092,7 @@ img {
   }
 
   .trust-bar {
-    margin-top: -32px;
+    margin-top: -1px;
     padding: 0 16px;
   }
 
@@ -1080,6 +1103,7 @@ img {
   .trust-bar__divider {
     width: 40px;
     height: 1px;
+    background: rgba(255, 255, 255, 0.12);
   }
 
   .trust-bar__item {
@@ -1087,15 +1111,15 @@ img {
   }
 
   .opportunity {
-    padding: 120px 0;
+    padding: 90px 0;
   }
 
   .why {
-    padding: 120px 0;
+    padding: 90px 0;
   }
 
   .footprint {
-    padding: 120px 0;
+    padding: 90px 0;
   }
 
   .footprint__locations {
@@ -1104,7 +1128,7 @@ img {
   }
 
   .cta {
-    padding: 120px 0;
+    padding: 90px 0;
   }
 
   .cta__title {

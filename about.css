@@ -26,10 +26,10 @@
   padding-bottom: 4px;
 }
 
-/* Solid header for inner pages */
+/* Semi-transparent header for inner pages */
 .header--solid {
-  background: #1e2837;
-  backdrop-filter: none;
+  background: rgba(20, 30, 45, 0.55);
+  backdrop-filter: blur(4px);
 }
 
 /* ========== Page Hero ========== */
@@ -145,7 +145,7 @@
 
 /* ========== History ========== */
 .history {
-  padding: 120px 0;
+  padding: 90px 0;
 }
 
 .history__inner {
@@ -275,7 +275,7 @@
 
 /* ========== CEO Quote ========== */
 .quote-section {
-  padding: 120px 0;
+  padding: 90px 0;
   background: #fff;
   border-top: 1px solid #eee;
 }
@@ -349,7 +349,7 @@
 
 /* ========== Investment Philosophy ========== */
 .philosophy {
-  padding: 120px 0;
+  padding: 90px 0;
 }
 
 .philosophy__header {
@@ -411,7 +411,7 @@
 /* ========== Market Callout ========== */
 .market-callout {
   background: #1e2837;
-  padding: 120px 0;
+  padding: 90px 0;
 }
 
 .market-callout__inner {
@@ -470,7 +470,7 @@
 
 /* ========== Team ========== */
 .team {
-  padding: 120px 0;
+  padding: 90px 0;
   background: #fff;
 }
 
@@ -570,7 +570,7 @@
 
 /* ========== Careers ========== */
 .careers {
-  padding: 120px 0;
+  padding: 90px 0;
   background: #fff;
   border-top: 1px solid #eee;
 }
@@ -667,7 +667,7 @@
 
 /* ========== Profile ========== */
 .profile {
-  padding: 120px 0;
+  padding: 90px 0;
   background: #fff;
   border-top: 1px solid #e8e8e8;
 }
@@ -802,11 +802,11 @@
   .team,
   .careers,
   .quote-section {
-    padding: 120px 0;
+    padding: 90px 0;
   }
 
   .market-callout {
-    padding: 120px 0;
+    padding: 90px 0;
   }
 
   .section-title {

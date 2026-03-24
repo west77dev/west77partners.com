@@ -88,10 +88,12 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <picture>
-      <source media="(max-width: 768px)" srcset="https://res.cloudinary.com/ddfrakts6/image/upload/v1774018094/image_huprno.png">
-      <img src="https://res.cloudinary.com/ddfrakts6/image/upload/v1774018060/image_1_mczqfw.png" alt="LivAway Suites property at dusk" class="hero__img">
-    </picture>
+    <video class="hero__img hero__video hero__video--active" muted playsinline>
+      <source src="https://res.cloudinary.com/ddfrakts6/video/upload/v1774326733/grok-video-87934a5c-0bcd-42cd-9883-4bfe2835b50c_4_eq5qoz.mp4" type="video/mp4">
+    </video>
+    <video class="hero__img hero__video" muted playsinline>
+      <source src="https://res.cloudinary.com/ddfrakts6/video/upload/v1774326849/grok-video-87934a5c-0bcd-42cd-9883-4bfe2835b50c_uvijwh.mp4" type="video/mp4">
+    </video>
     <div class="hero__overlay"></div>
     <div class="hero__content">
       <p class="hero__eyebrow">Affordable Extended Stay Development</p>
@@ -105,33 +107,41 @@
     <a href="#about" class="hero__scroll-arrow" aria-label="Scroll down">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14"/><path d="M19 12l-7 7-7-7"/></svg>
     </a>
-  </section>
 
-  <!-- Trust Bar (floating stats) -->
-  <section class="trust-bar">
-    <div class="trust-bar__inner">
-      <div class="trust-bar__item">
-        <i data-lucide="trending-up" class="trust-bar__icon"></i>
-        <span class="trust-bar__number count-up">$500M+</span>
-        <span class="trust-bar__label">Deployed</span>
-      </div>
-      <div class="trust-bar__divider"></div>
-      <div class="trust-bar__item">
-        <i data-lucide="map-pin" class="trust-bar__icon"></i>
-        <span class="trust-bar__number count-up">60+</span>
-        <span class="trust-bar__label">Locations in Pipeline</span>
-      </div>
-      <div class="trust-bar__divider"></div>
-      <div class="trust-bar__item">
-        <i data-lucide="check-circle" class="trust-bar__icon"></i>
-        <span class="trust-bar__number count-up">100%</span>
-        <span class="trust-bar__label">Under Budget</span>
-      </div>
-      <div class="trust-bar__divider"></div>
-      <div class="trust-bar__item">
-        <i data-lucide="calendar" class="trust-bar__icon"></i>
-        <span class="trust-bar__number count-up">100K+</span>
-        <span class="trust-bar__label">Room Nights Year One</span>
+    <!-- Trust Bar (overlaid on hero) -->
+    <div class="trust-bar">
+      <div class="trust-bar__inner">
+        <div class="trust-bar__item">
+          <i data-lucide="trending-up" class="trust-bar__icon"></i>
+          <div class="trust-bar__item-text">
+            <span class="trust-bar__number count-up">$500M+</span>
+            <span class="trust-bar__label">Deployed</span>
+          </div>
+        </div>
+        <div class="trust-bar__divider"></div>
+        <div class="trust-bar__item">
+          <i data-lucide="map-pin" class="trust-bar__icon"></i>
+          <div class="trust-bar__item-text">
+            <span class="trust-bar__number count-up">60+</span>
+            <span class="trust-bar__label">Locations in Pipeline</span>
+          </div>
+        </div>
+        <div class="trust-bar__divider"></div>
+        <div class="trust-bar__item">
+          <i data-lucide="check-circle" class="trust-bar__icon"></i>
+          <div class="trust-bar__item-text">
+            <span class="trust-bar__number count-up">100%</span>
+            <span class="trust-bar__label">Under Budget</span>
+          </div>
+        </div>
+        <div class="trust-bar__divider"></div>
+        <div class="trust-bar__item">
+          <i data-lucide="calendar" class="trust-bar__icon"></i>
+          <div class="trust-bar__item-text">
+            <span class="trust-bar__number count-up">100K+</span>
+            <span class="trust-bar__label">Room Nights Year One</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -274,7 +284,7 @@
 
   <!-- CTA Section -->
   <section class="cta">
-    <div class="cta__bg" style="background-image: url('https://res.cloudinary.com/ddfrakts6/image/upload/v1774018060/image_1_mczqfw.png');"></div>
+    <div class="cta__bg" style="background-image: url('https://res.cloudinary.com/ddfrakts6/image/upload/v1774323603/V8-_21_u9pn7c.png'); background-position: center 65%;"></div>
     <div class="cta__overlay"></div>
     <div class="container">
       <div class="cta__content reveal--scale reveal">
