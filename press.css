@@ -362,3 +362,31 @@
     border-top: none;
   }
 }
+
+@media (max-width: 480px) {
+  .press-featured__title {
+    font-size: 22px;
+  }
+
+  .press-featured__text {
+    font-size: 13px;
+  }
+
+  .press-card__title {
+    font-size: 14px;
+  }
+
+  .media-card__title {
+    font-size: 14px;
+  }
+
+  .press-cta__text {
+    font-size: 14px;
+  }
+
+  .press-featured,
+  .press-section,
+  .press-cta {
+    padding: 56px 0;
+  }
+}

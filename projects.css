@@ -293,6 +293,48 @@
   display: block;
 }
 
+.pipeline-map__legend {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 24px;
+  margin-top: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.pipeline-map__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pipeline-map__legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.pipeline-map__legend-dot--completed {
+  background: #c8a45a;
+}
+
+.pipeline-map__legend-dot--construction {
+  background: #1e2837;
+}
+
+.pipeline-map__legend-dot--pipeline {
+  background: #1e2837;
+}
+
+.pipeline-map__legend-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+
 .pipeline-map__svg {
   width: 100%;
   height: auto;
@@ -572,5 +614,34 @@
 
   .future-markets__grid {
     grid-template-columns: 1fr;
+  }
+
+  .proj-detail__panel {
+    padding: 0;
+  }
+
+  .proj-detail__body {
+    padding: 24px 20px;
+  }
+
+  .proj-detail__title {
+    font-size: 22px;
+  }
+
+  .proj-detail__summary {
+    font-size: 14px;
+  }
+
+  .case-study-card__title {
+    font-size: 18px;
+  }
+
+  .case-study-card__text {
+    font-size: 13px;
+  }
+
+  .proj-section,
+  .future-markets {
+    padding: 56px 0;
   }
 }

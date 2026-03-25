@@ -769,6 +769,10 @@
     height: 1px;
   }
 
+  .about-stats__number {
+    font-size: 34px;
+  }
+
   .section-nav__list {
     gap: 28px;
   }
@@ -794,6 +798,12 @@
     justify-content: flex-start;
     padding: 0 24px;
     -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .section-nav__list::-webkit-scrollbar {
+    display: none;
   }
 
   .section-nav__link {
@@ -829,8 +839,105 @@
 }
 
 @media (max-width: 480px) {
+  .page-hero {
+    min-height: 280px;
+  }
+
+  .page-hero__content {
+    padding: 0 16px 32px;
+  }
+
+  .page-hero__title {
+    font-size: 28px;
+  }
+
+  .page-hero__eyebrow {
+    font-size: 10px;
+  }
+
+  .section-nav__list {
+    gap: 12px;
+  }
+
+  .section-nav__link {
+    font-size: 10px;
+  }
+
+  .history__text {
+    font-size: 14px;
+  }
+
+  .timeline {
+    padding-left: 24px;
+  }
+
+  .timeline__year {
+    font-size: 22px;
+  }
+
+  .timeline__item::before {
+    left: -28px;
+    width: 6px;
+    height: 6px;
+  }
+
+  .quote-section__text {
+    font-size: 18px;
+  }
+
+  .philosophy__principle-title {
+    font-size: 14px;
+  }
+
+  .philosophy__principle-text {
+    font-size: 13px;
+  }
+
   .team__grid--3 {
     grid-template-columns: 1fr;
+  }
+
+  .team-card__name {
+    font-size: 14px;
+  }
+
+  .team-card__role {
+    font-size: 11px;
+  }
+
+  .careers__text {
+    font-size: 14px;
+  }
+
+  .profile__text {
+    font-size: 14px;
+  }
+
+  .profile__title {
+    font-size: 24px;
+  }
+
+  .history,
+  .philosophy,
+  .market-callout,
+  .quote-section,
+  .team,
+  .careers,
+  .profile,
+  .about-stats {
+    padding: 56px 0;
+  }
+
+  .about-stats__number {
+    font-size: 28px;
+  }
+
+  .about-stats__text {
+    font-size: 13px;
+  }
+
+  .about-stats__grid {
+    gap: 40px;
   }
 }
 
@@ -924,7 +1031,15 @@
 
 @media (max-width: 600px) {
   .team-modal__panel {
-    padding: 32px 24px;
+    padding: 24px 20px;
+  }
+
+  .team-modal__name {
+    font-size: 20px;
+  }
+
+  .team-modal__bio {
+    font-size: 13px;
   }
 
   .team-modal__header {

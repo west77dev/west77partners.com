@@ -980,7 +980,23 @@ img {
 }
 
 /* ========== Responsive ========== */
+@media (max-width: 1280px) {
+  .nav__list {
+    gap: 20px;
+  }
+
+  .nav__link {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .nav__link--outlined {
+    padding: 8px 18px;
+  }
+}
+
 @media (max-width: 1024px) {
+
   .hero__title {
     font-size: 44px;
   }
@@ -1004,16 +1020,23 @@ img {
   }
 
   .trust-bar__inner {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 
   .trust-bar__item {
-    padding: 28px 32px;
+    padding: 20px 24px;
+    margin-right: 20px;
   }
-}
 
-@media (max-width: 768px) {
+  .trust-bar__number {
+    font-size: 22px;
+  }
+
+  .trust-bar__label {
+    font-size: 9px;
+  }
+
   .nav__list {
     display: none;
   }
@@ -1061,13 +1084,16 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 60px;
     height: 100%;
   }
 
   .hero__cta {
     flex-direction: column;
     gap: 12px;
+  }
+
+  .hero__scroll-arrow {
+    display: none;
   }
 
   .section-title {
@@ -1091,23 +1117,50 @@ img {
     height: 300px;
   }
 
+  /* Trust bar: keep overlaid but make room */
   .trust-bar {
-    margin-top: -1px;
     padding: 0 16px;
   }
 
   .trust-bar__inner {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .trust-bar__divider {
-    width: 40px;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.12);
+    display: none;
   }
 
   .trust-bar__item {
-    padding: 20px;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 16px 8px;
+    margin-right: 0;
+  }
+
+  .trust-bar__number {
+    font-size: 20px;
+  }
+
+  .trust-bar__label {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .trust-bar__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .hero__content {
+    padding-bottom: 100px;
+  }
+
+  .hero__scroll-arrow {
+    display: none;
   }
 
   .opportunity {
@@ -1137,7 +1190,6 @@ img {
 
   .cta__buttons {
     flex-direction: column;
-    align-items: center;
     gap: 12px;
   }
 
@@ -1150,5 +1202,119 @@ img {
     flex-direction: column;
     gap: 12px;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .header__inner {
+    padding: 0 16px;
+    height: 70px;
+  }
+
+  .logo-img {
+    height: 44px;
+  }
+
+  .hero {
+    height: 100vh;
+    min-height: 560px;
+  }
+
+  .hero__content {
+    padding-bottom: 200px;
+  }
+
+  .hero__title {
+    font-size: 28px;
+  }
+
+  .hero__subtitle {
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  .trust-bar__item {
+    width: 50%;
+    padding: 14px 12px;
+    margin-right: 0;
+    gap: 8px;
+  }
+
+  .trust-bar__number {
+    font-size: 16px;
+  }
+
+  .trust-bar__label {
+    font-size: 7px;
+    letter-spacing: 0.8px;
+  }
+
+  .trust-bar__divider {
+    display: none;
+  }
+
+  .trust-bar__icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .about__description {
+    font-size: 14px;
+  }
+
+  .opportunity__item-num {
+    font-size: 24px;
+  }
+
+  .opportunity__item-title {
+    font-size: 14px;
+  }
+
+  .opportunity__item-text {
+    font-size: 13px;
+  }
+
+  .why__card-title {
+    font-size: 14px;
+  }
+
+  .why__card-text {
+    font-size: 13px;
+  }
+
+  .cta__title {
+    font-size: 24px;
+  }
+
+  .cta__text {
+    font-size: 14px;
+  }
+
+  .footer__grid {
+    gap: 32px;
+    padding: 0;
+  }
+
+  .nav__list.active {
+    padding: 24px 16px;
+  }
+
+  .about {
+    padding: 56px 0 48px;
+  }
+
+  .opportunity,
+  .why,
+  .footprint,
+  .cta {
+    padding: 56px 0;
   }
 }

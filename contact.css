@@ -359,3 +359,27 @@
     height: 300px;
   }
 }
+
+@media (max-width: 480px) {
+  .contact-form__img {
+    height: 250px;
+  }
+
+  .contact-form__heading {
+    font-size: 22px;
+  }
+
+  .offices__card-title {
+    font-size: 16px;
+  }
+
+  .offices,
+  .contact-form-section,
+  .departments {
+    padding: 56px 0;
+  }
+
+  .departments__card-title {
+    font-size: 16px;
+  }
+}
