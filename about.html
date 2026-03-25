@@ -392,7 +392,7 @@
         <p class="eyebrow eyebrow--center">Company Profile</p>
         <h2 class="section-title profile__title">West77 Partners Profile</h2>
         <p class="profile__text">Download our brochure for a comprehensive overview of West77 Partners, our investment approach, and our growing portfolio.</p>
-        <a href="#" class="btn btn--dark btn--lg">Download West77 Partners Brochure</a>
+        <a href="documents/West77-Partners-Profile.pdf" target="_blank" rel="noopener" class="btn btn--dark btn--lg">Download West77 Partners Brochure</a>
       </div>
     </div>
   </section>
@@ -474,8 +474,71 @@
     </div>
   </footer>
 
+  <!-- Team Bio Modal -->
+  <div class="team-modal" id="teamModal">
+    <div class="team-modal__backdrop"></div>
+    <div class="team-modal__panel">
+      <button class="team-modal__close" aria-label="Close">&times;</button>
+      <div class="team-modal__header">
+        <h3 class="team-modal__name" id="teamModalName"></h3>
+        <p class="team-modal__role" id="teamModalRole"></p>
+      </div>
+      <p class="team-modal__bio" id="teamModalBio"></p>
+    </div>
+  </div>
+
   <script src="script.js"></script>
   <script>lucide.createIcons();</script>
+  <script>
+    // Team bio modal
+    (function() {
+      var modal = document.getElementById('teamModal');
+      if (!modal) return;
+      var backdrop = modal.querySelector('.team-modal__backdrop');
+      var closeBtn = modal.querySelector('.team-modal__close');
+      var nameEl = document.getElementById('teamModalName');
+      var roleEl = document.getElementById('teamModalRole');
+      var bioEl = document.getElementById('teamModalBio');
+      var teamData = null;
+
+      fetch('team.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          teamData = {};
+          data.forEach(function(m) { teamData[m.name] = m; });
+          initCards();
+        });
+
+      function initCards() {
+        document.querySelectorAll('.team-card').forEach(function(card) {
+          var name = card.querySelector('.team-card__name').textContent.trim();
+          if (teamData[name]) {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', function() { openModal(teamData[name]); });
+          }
+        });
+      }
+
+      function openModal(member) {
+        nameEl.textContent = member.name;
+        roleEl.textContent = member.position;
+        bioEl.textContent = member.bio;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      backdrop.addEventListener('click', closeModal);
+      closeBtn.addEventListener('click', closeModal);
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+      });
+    })();
+  </script>
 
 </body>
 </html>
