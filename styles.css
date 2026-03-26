@@ -47,6 +47,13 @@ img {
   z-index: 100;
   background: rgba(20, 30, 45, 0.55);
   backdrop-filter: blur(4px);
+  transition: background 0.3s;
+}
+
+.header.header--menu-open {
+  background: #141e2d;
+  backdrop-filter: none;
+  box-shadow: none;
 }
 
 .header__inner {

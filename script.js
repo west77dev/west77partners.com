@@ -1,15 +1,18 @@
 // Mobile menu toggle
 const hamburger = document.querySelector('.hamburger');
 const navList = document.querySelector('.nav__list');
+const headerEl = document.querySelector('.header');
 
 hamburger.addEventListener('click', () => {
   navList.classList.toggle('active');
+  headerEl.classList.toggle('header--menu-open');
 });
 
 // Close mobile menu when a link is clicked
 navList.querySelectorAll('.nav__link').forEach(link => {
   link.addEventListener('click', () => {
     navList.classList.remove('active');
+    headerEl.classList.remove('header--menu-open');
   });
 });
 
