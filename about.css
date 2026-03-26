@@ -44,9 +44,10 @@
 
 .page-hero__bg {
   position: absolute;
-  inset: 0;
+  inset: -30px 0;
   background-size: cover;
   background-position: center 60%;
+  will-change: transform;
 }
 
 .page-hero__overlay {
@@ -146,6 +147,11 @@
 /* ========== History ========== */
 .history {
   padding: 90px 0;
+}
+
+.history__content {
+  position: sticky;
+  top: 120px;
 }
 
 .history__inner {
@@ -360,6 +366,12 @@
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 80px;
+  align-items: start;
+}
+
+.philosophy__main {
+  position: sticky;
+  top: 120px;
 }
 
 .philosophy__text {
@@ -728,6 +740,11 @@
   .history__inner {
     grid-template-columns: 1fr;
     gap: 60px;
+  }
+
+  .history__content,
+  .philosophy__main {
+    position: static;
   }
 
   .philosophy__grid {

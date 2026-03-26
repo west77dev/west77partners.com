@@ -591,11 +591,33 @@
   }
 
   .team-exp__highlights {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    padding-top: 0;
   }
 
   .team-exp__highlight {
-    flex: 1 1 40%;
+    flex: none;
+    padding: 24px 20px;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+  }
+
+  .team-exp__highlight:nth-child(even) {
+    border-right: none;
+  }
+
+  .team-exp__highlight:nth-child(n+3) {
+    border-bottom: none;
+  }
+
+  .team-exp__highlight:last-child {
+    padding-right: 20px;
+  }
+
+  .team-exp__highlight:not(:first-child) {
+    padding-left: 20px;
   }
 
   .pipeline-map__placeholder {

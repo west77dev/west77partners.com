@@ -91,11 +91,10 @@
 .offices__contact-bar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 48px;
-  padding: 36px 0;
+  padding: 36px 0 0;
   border-top: 1px solid #e8e8e8;
-  border-bottom: 1px solid #e8e8e8;
 }
 
 .offices__contact-item {
@@ -300,17 +299,24 @@
 
   .offices__card-content,
   .offices__card:first-child .offices__card-content,
-  .offices__card:last-child .offices__card-content {
+  .offices__card:last-child .offices__card-content,
+  .offices__card:not(:first-child) .offices__card-content {
     padding: 0;
+  }
+
+  .offices__badge {
+    position: static;
+    display: inline-block;
+    margin-bottom: 12px;
   }
 
   .contact-form__inner {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 32px;
   }
 
   .contact-form__img {
-    height: 400px;
+    height: 300px;
   }
 
   .departments__grid {
@@ -337,17 +343,18 @@
 
 @media (max-width: 768px) {
   .offices {
-    padding: 80px 0 60px;
+    padding: 60px 0 40px;
   }
 
   .contact-form-section,
   .departments {
-    padding: 80px 0;
+    padding: 60px 0;
   }
 
   .offices__contact-bar {
     flex-direction: column;
-    gap: 20px;
+    align-items: flex-start;
+    gap: 16px;
   }
 
   .offices__contact-divider {
@@ -373,10 +380,18 @@
     font-size: 16px;
   }
 
+  .offices__grid {
+    margin-bottom: 24px;
+  }
+
+  .contact-form__img {
+    height: 200px;
+  }
+
   .offices,
   .contact-form-section,
   .departments {
-    padding: 56px 0;
+    padding: 40px 0;
   }
 
   .departments__card-title {

@@ -159,6 +159,28 @@ if (heroImg) {
   }, { passive: true });
 }
 
+// ========== Parallax Backgrounds ==========
+const parallaxEls = document.querySelectorAll('.page-hero__bg, .cta__bg');
+if (parallaxEls.length > 0) {
+  let paraTicking = false;
+  window.addEventListener('scroll', () => {
+    if (!paraTicking) {
+      requestAnimationFrame(() => {
+        parallaxEls.forEach(el => {
+          const rect = el.parentElement.getBoundingClientRect();
+          const viewH = window.innerHeight;
+          if (rect.bottom > 0 && rect.top < viewH) {
+            const progress = (viewH - rect.top) / (viewH + rect.height);
+            el.style.transform = `translateY(${(progress - 0.5) * 60}px)`;
+          }
+        });
+        paraTicking = false;
+      });
+      paraTicking = true;
+    }
+  }, { passive: true });
+}
+
 // ========== Header Scroll Effect ==========
 const header = document.querySelector('.header');
 if (header && !header.classList.contains('header--solid')) {
