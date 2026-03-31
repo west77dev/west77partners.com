@@ -19,13 +19,25 @@
   },
   {
     "name": "AAron Converse",
-    "position": "Director of Development & Asset Management",
+    "position": "VP of Operations",
     "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/AAron-Converse_mgwhkm.jpg",
     "bio": "AAron is a Director of Development & Asset Management at West77 Partners, managing end-to-end details of project development including construction management, project openings and stabilizing operations. AAron collaborates directly with jurisdictions, design professionals, contractors, procurement and management companies to ensure the timely and successful completion of projects. Prior to joining West77 Partners, AAron led logistical operations in manufacturing in Salt Lake City. AAron earned a double major in Sports Management and Marketing from the University of Utah. In 2010 AAron received the Kansas Collegiate Athletic Conference Pitcher of the Year award while attending Kansas Wesleyan University."
   },
   {
-    "name": "Kerri Findlay",
-    "position": "Director of Finance & Investor Relations",
+    "name": "Matt Ethington",
+    "position": "Corporate Controller",
+    "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/v1774979300/25-1008West77-MAttEthington0705-Edit-2_yojxgw.jpg",
+    "bio": "Matt Ethington is the Corporate Controller at West77 Partners, where he acts as a key financial partner to ownership, investors, and lending partners across the firm's real estate portfolio. He oversees financial operations, asset-level reporting, and ownership representation, working closely with leadership and asset management teams to support capital stewardship, transparency, and long-term value creation. Matt holds a BS degree in Accounting from Utah State University, a Master of Accounting degree from Weber State University, and is a Certified Public Accountant (CPA)."
+  },
+  {
+    "name": "Josh Cheatham",
+    "position": "HR Manager",
+    "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/v1774979302/25-1008West77-JoshCheatham0697-Edit-Edit-2_kk8nfm.jpg",
+    "bio": ""
+  },
+  {
+    "name": "Kerri Findlay Snarr",
+    "position": "Chief of Staff",
     "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/Kerri-Findlay_lzdn92.jpg",
     "bio": "As Director of Finance & Investor Relations, Kerri manages the company's structured financing needs and investor relations. In addition, Kerri oversees the company's risk management program. Previous to joining West77 Partners, Kerri worked for Wasatch Commercial Management, a Salt Lake City-based real estate investment firm, where she was responsible for commercial leasing and construction accounting for tenant improvements across the company's commercial assets. Kerri holds a degree in finance from Southern Utah University."
   },
@@ -49,7 +61,7 @@
   },
   {
     "name": "Schyler Shoemaker",
-    "position": "Acquisitions Manager",
+    "position": "Director of Acquisitions",
     "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/Schyler-Shoemaker_rpw5kg.jpg",
     "bio": "As Acquisitions Manager, Schyler evaluates markets and individual sites for West77 Partner's extended stay hotel development projects. Schyler also manages negotiations and contracting of sites, aiding in the due diligence process, and other various functions for the firm. Prior to joining West77 Partners, Schyler worked for Streamline Capital, a Salt Lake City-based real estate investment firm, where he was responsible for sourcing and underwriting multifamily investment opportunities, conducting due diligence, and assisting in capital raising and asset management. Schyler holds a degree in Finance with an emphasis in Real Estate from Brigham Young University."
   },
@@ -100,5 +112,29 @@
     "position": "Director of Development",
     "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/Matt-Hook_emfj6j.jpg",
     "bio": "Matt is a Director of Development at West77 Partners. His primary role includes managing project due diligence, planning, entitlements and permitting. Matt values building collaborative and long-lasting relationships with local jurisdictions and consultants in an effort to minimize risk and maximize the value each development will bring to the owner, the customer, and the community at-large. Prior to West77, Matt worked as the Director of Entitlements and Director of Acquisitions at Concord Hospitality where he managed the development pipeline for their midscale extended stay program. Matt's career started in PA where he worked on warehousing developments, residential subdivisions, and various commercial projects. Matt earned his bachelor's degree in Urban and Environmental Planning from West Chester University of Pennsylvania where he was also a captain of the Track and Field team."
+  },
+  {
+    "name": "Morgan Fabrizio",
+    "position": "Director of Development",
+    "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/v1774979303/25-1008West77-MorganFabizio0663-Edit-2_bqfgad.jpg",
+    "bio": "Morgan serves as Director of Development at West77 Partners, where he leads planning, entitlements, and permitting, working hand in hand with municipal officials, consultants, architects, engineers, and internal teams. Morgan also leads due diligence activities for sites including coordinating third party reports, title matters and other factors affecting the development viability of a site. Prior to joining West77 Partners, Morgan managed a portfolio of multifamily, hospitality, and retail projects at Overland Group, overseeing due diligence, entitlements, project coordination, construction management, and lease-up/stabilization. He began his career at Alpine Homes, where he gained experience in residential and land development, acquisitions, entitlement strategies, and financial analysis. Morgan holds a bachelor's degree in Finance with an emphasis in Real Estate from Utah State University."
+  },
+  {
+    "name": "AJ Boston",
+    "position": "Corporate Controller",
+    "photo": "",
+    "bio": ""
+  },
+  {
+    "name": "Brad Grendill",
+    "position": "Asset Manager",
+    "photo": "",
+    "bio": ""
+  },
+  {
+    "name": "Peni Norman",
+    "position": "Executive Assistant to the CEO",
+    "photo": "",
+    "bio": ""
   }
 ]
