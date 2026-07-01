@@ -195,27 +195,15 @@ img {
   }
 }
 
-.hero__eyebrow,
 .hero__title,
 .hero__subtitle,
 .hero__cta {
   animation: heroFadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-.hero__eyebrow { animation-delay: 0.2s; }
-.hero__title { animation-delay: 0.4s; }
-.hero__subtitle { animation-delay: 0.6s; }
-.hero__cta { animation-delay: 0.8s; }
-
-.hero__eyebrow {
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #c8a45a;
-  margin-bottom: 20px;
-}
+.hero__title { animation-delay: 0.3s; }
+.hero__subtitle { animation-delay: 0.5s; }
+.hero__cta { animation-delay: 0.7s; }
 
 .hero__title {
   font-family: 'Roboto', 'Helvetica Neue', sans-serif;
