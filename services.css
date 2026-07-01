@@ -44,13 +44,6 @@
   border-left-color: #c8a45a;
 }
 
-.svc-overview__stage-num {
-  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  color: #c8a45a;
-  min-width: 32px;
-}
 
 .svc-overview__stage-label {
   font-family: 'Inter', sans-serif;
@@ -140,15 +133,6 @@
   border-bottom: none;
 }
 
-.svc-acq__item-num {
-  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  color: #c8a45a;
-  line-height: 1;
-  min-width: 40px;
-  padding-top: 2px;
-}
 
 .svc-acq__item-title {
   font-family: 'Roboto', 'Helvetica Neue', sans-serif;
@@ -235,15 +219,6 @@
   color: rgba(200, 164, 90, 0.35);
 }
 
-.svc-steps__num {
-  display: block;
-  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
-  font-size: 32px;
-  font-weight: 300;
-  color: #c8a45a;
-  margin-bottom: 16px;
-  line-height: 1;
-}
 
 .svc-steps__title {
   font-family: 'Roboto', 'Helvetica Neue', sans-serif;
@@ -495,17 +470,6 @@
   box-shadow: none;
 }
 
-.svc-am-card__num {
-  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  color: #c8a45a;
-  display: block;
-  margin-bottom: 0;
-  line-height: 1;
-  flex-shrink: 0;
-  min-width: 40px;
-}
 
 .svc-am-card__title {
   font-family: 'Roboto', 'Helvetica Neue', sans-serif;
@@ -699,10 +663,6 @@
     padding: 24px 20px;
   }
 
-  .svc-steps__num {
-    font-size: 24px;
-    margin-bottom: 12px;
-  }
 
   .svc-steps__title {
     font-size: 15px;

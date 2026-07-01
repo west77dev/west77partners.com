@@ -246,30 +246,52 @@ img {
 
 .hero__scroll-arrow {
   position: absolute;
-  bottom: 100px;
+  bottom: 116px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-  color: rgba(255, 255, 255, 0.4);
-  display: flex;
+  display: inline-flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 50%;
-  transition: color 0.3s, border-color 0.3s, transform 0.3s;
-  animation: heroFadeUp 1s 1.2s cubic-bezier(0.16, 1, 0.3, 1) both, bounceSubtle 2.4s 2.5s ease-in-out infinite;
+  gap: 12px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s;
+  animation: scrollHintFade 1s 1.2s ease both;
 }
 
 .hero__scroll-arrow:hover {
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.4);
 }
 
-@keyframes bounceSubtle {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(6px); }
+.hero__scroll-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.hero__scroll-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  animation: scrollBob 2.4s ease-in-out infinite;
+}
+
+@keyframes scrollHintFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scrollBob {
+  0%, 100% { transform: translateY(0); opacity: 0.7; }
+  50% { transform: translateY(6px); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__scroll-icon { animation: none; }
 }
 
 /* ========== Icons (Lucide) ========== */
@@ -389,7 +411,6 @@ img {
   z-index: 3;
   padding: 0;
   background: linear-gradient(to bottom, rgba(15, 23, 35, 0.0), rgba(15, 23, 35, 0.7));
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .trust-bar__inner {
@@ -401,7 +422,6 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .trust-bar__item {
@@ -443,14 +463,6 @@ img {
   color: rgba(255, 255, 255, 0.45);
   letter-spacing: 1.5px;
   text-transform: uppercase;
-}
-
-.trust-bar__divider {
-  width: 1px;
-  height: 28px;
-  flex-shrink: 0;
-  margin-right: 32px;
-  background: rgba(255, 255, 255, 0.15);
 }
 
 /* ========== Section Titles ========== */
@@ -576,16 +588,6 @@ img {
 
 .opportunity__item:last-child {
   border-bottom: none;
-}
-
-.opportunity__item-num {
-  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  color: #c8a45a;
-  line-height: 1;
-  min-width: 40px;
-  padding-top: 2px;
 }
 
 .opportunity__item-title {
@@ -1135,11 +1137,6 @@ img {
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  .trust-bar__divider {
-    display: none;
   }
 
   .trust-bar__item {
@@ -1261,10 +1258,6 @@ img {
     letter-spacing: 0.8px;
   }
 
-  .trust-bar__divider {
-    display: none;
-  }
-
   .trust-bar__icon {
     width: 14px;
     height: 14px;
@@ -1276,10 +1269,6 @@ img {
 
   .about__description {
     font-size: 14px;
-  }
-
-  .opportunity__item-num {
-    font-size: 24px;
   }
 
   .opportunity__item-title {

@@ -396,14 +396,6 @@
   align-items: flex-start;
 }
 
-.philosophy__principle-num {
-  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
-  font-size: 28px;
-  font-weight: 400;
-  color: #c8a45a;
-  line-height: 1;
-  min-width: 36px;
-}
 
 .philosophy__principle-title {
   font-family: 'Roboto', 'Helvetica Neue', sans-serif;
