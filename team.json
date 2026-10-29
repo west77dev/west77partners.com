@@ -13,13 +13,13 @@
   },
   {
     "name": "Todd Lust",
-    "position": "Controller",
+    "position": "Corporate Controller",
     "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/Todd-Lust_fq4rqy.jpg",
     "bio": "As Controller, Todd manages the company's accounting, accounts payable, and development project accounting. He also plays a critical role in establishing development proformas and operational budgets for future projects. Previous to joining West77 Partners, Todd worked as a project accountant and controls manager for Vulcan, a Seattle-based real estate development firm whose projects extend to the Amazon Campus and Century Link Stadium, home of the Seattle Seahawks. Todd holds a degree in finance and accounting from Washington State University."
   },
   {
     "name": "AAron Converse",
-    "position": "VP of Operations",
+    "position": "VP, Operations",
     "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/AAron-Converse_mgwhkm.jpg",
     "bio": "AAron is a Director of Development & Asset Management at West77 Partners, managing end-to-end details of project development including construction management, project openings and stabilizing operations. AAron collaborates directly with jurisdictions, design professionals, contractors, procurement and management companies to ensure the timely and successful completion of projects. Prior to joining West77 Partners, AAron led logistical operations in manufacturing in Salt Lake City. AAron earned a double major in Sports Management and Marketing from the University of Utah. In 2010 AAron received the Kansas Collegiate Athletic Conference Pitcher of the Year award while attending Kansas Wesleyan University."
   },
@@ -31,13 +31,13 @@
   },
   {
     "name": "Dallin Earl",
-    "position": "Director of Capital Markets and Investments",
+    "position": "Director, Capital Markets & Investments",
     "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/26-0526West77-DalinEarl0815---2_bhhdg0.jpg",
     "bio": "As Director of Capital Markets and Investments, Dallin is responsible for identifying new relationships and creating strategic partnerships with potential capital partners to support the growth of the company. With his institutional background in real estate development, he lends support to the acquisitions and asset management teams. Prior to joining West77 Partners, Dallin was part of the development team at Greystar in Dallas, where he participated in land sourcing, plan development, project management, and capital sourcing, with an overall emphasis in underwriting. Before Greystar, he was with Goldman Sachs, managing risk and relationships on $2.7 billion of loan commitments secured by approximately $12.3 billion of collateral nationwide. Dallin holds a degree in Finance with an emphasis in Real Estate from Brigham Young University."
   },
   {
     "name": "Josh Cheatham",
-    "position": "Director of Human Resources",
+    "position": "Director, Human Resources",
     "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/v1774979302/25-1008West77-JoshCheatham0697-Edit-Edit-2_kk8nfm.jpg",
     "bio": ""
   },
@@ -67,19 +67,19 @@
   },
   {
     "name": "Schyler Shoemaker",
-    "position": "Director of Acquisitions",
+    "position": "Director, Acquisitions",
     "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/Schyler_-_Headshot_Update_iwu3c7.jpg",
     "bio": "As Acquisitions Manager, Schyler evaluates markets and individual sites for West77 Partner's extended stay hotel development projects. Schyler also manages negotiations and contracting of sites, aiding in the due diligence process, and other various functions for the firm. Prior to joining West77 Partners, Schyler worked for Streamline Capital, a Salt Lake City-based real estate investment firm, where he was responsible for sourcing and underwriting multifamily investment opportunities, conducting due diligence, and assisting in capital raising and asset management. Schyler holds a degree in Finance with an emphasis in Real Estate from Brigham Young University."
   },
   {
     "name": "Jesse King",
-    "position": "Project Manager",
+    "position": "Preconstruction Manager",
     "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/Jesse-King_dzft5k.jpg",
     "bio": "As Project Manager, Jesse is responsible for ensuring the timely and on-budget completion of assigned development projects by overseeing all phases of construction. This includes preconstruction support, bidding, executing subcontractors and coordinating equipment and materials. During construction, Jesse works closely with project Superintendents to make certain subcontractors and suppliers are adhering to West77 Partners quality, safety, and budget expectations. Jesse has managed multiple hospitality and multifamily projects and offers a wealth of experience to the West77 team with a collaborative approach focused on building productive and high-performing project teams."
   },
   {
     "name": "Edgar Ruiz",
-    "position": "Assistant Project Manager",
+    "position": "Project Manager",
     "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/Edgar-Ruiz_k8hz0y.jpg",
     "bio": "As Assistant Project Manager, Edgar is responsible for assisting the Project Managers, as well as the Superintendents throughout the course of construction. Before joining West77 Partners, Edgar gained experience in the construction industry by working as an estimator/project manager for a subcontractor out of California for 6 years. Upon moving to Washington Edgar has spent the last several years working as a General Contractor on large ground-up multifamily projects overseeing document control, field QC, and closeout. Edgar holds a degree in Construction Management from California State University, Fresno."
   },
@@ -90,10 +90,22 @@
     "bio": "As a Cost Accountant, Branden is responsible for tracking, analyzing, and managing the costs associated with construction projects and company operations. He helps ensure projects stay within budget, expenses are accurately recorded, and management has reliable financial information. Previous to joining West77 Partners, Branden has over 10 years of corporate accounting experience. Branden holds a degree in business administration from Western Washington University."
   },
   {
+    "name": "Andrew Smith",
+    "position": "Superintendent & Quality Control Manager",
+    "photo": "",
+    "bio": ""
+  },
+  {
     "name": "Debbie Hill",
     "position": "Project Coordinator",
     "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/Debbie-Hill_x3t73e.jpg",
     "bio": "As Project Coordinator, Debbie works with the development and construction teams providing administrative support across a wide variety of activities and projects. Before joining West77 Partners, she was a project coordinator and estimating assistant for a design-build general contracting firm in Wisconsin. Her background includes over 15 years of experience in the hospitality industry in roles ranging from guest experience to multi-property sales for full service, extended stay and select service tiers."
+  },
+  {
+    "name": "Aaron Jewell",
+    "position": "VP, Construction",
+    "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/v1793294696/Aaron_Jewell_Headshot_3_27_25-100_office_under_10MB_xkpnhx.jpg",
+    "bio": ""
   },
   {
     "name": "Jerry Proctor",
@@ -115,13 +127,13 @@
   },
   {
     "name": "Matt Hook",
-    "position": "Director of Development",
+    "position": "Director, Development",
     "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/Matt-Hook_emfj6j.jpg",
     "bio": "Matt is a Director of Development at West77 Partners. His primary role includes managing project due diligence, planning, entitlements and permitting. Matt values building collaborative and long-lasting relationships with local jurisdictions and consultants in an effort to minimize risk and maximize the value each development will bring to the owner, the customer, and the community at-large. Prior to West77, Matt worked as the Director of Entitlements and Director of Acquisitions at Concord Hospitality where he managed the development pipeline for their midscale extended stay program. Matt's career started in PA where he worked on warehousing developments, residential subdivisions, and various commercial projects. Matt earned his bachelor's degree in Urban and Environmental Planning from West Chester University of Pennsylvania where he was also a captain of the Track and Field team."
   },
   {
     "name": "Morgan Fabrizio",
-    "position": "Director of Development",
+    "position": "Director, Development",
     "photo": "https://res.cloudinary.com/ddfrakts6/image/upload/v1774979303/25-1008West77-MorganFabizio0663-Edit-2_bqfgad.jpg",
     "bio": "Morgan serves as Director of Development at West77 Partners, where he leads planning, entitlements, and permitting, working hand in hand with municipal officials, consultants, architects, engineers, and internal teams. Morgan also leads due diligence activities for sites including coordinating third party reports, title matters and other factors affecting the development viability of a site. Prior to joining West77 Partners, Morgan managed a portfolio of multifamily, hospitality, and retail projects at Overland Group, overseeing due diligence, entitlements, project coordination, construction management, and lease-up/stabilization. He began his career at Alpine Homes, where he gained experience in residential and land development, acquisitions, entitlement strategies, and financial analysis. Morgan holds a bachelor's degree in Finance with an emphasis in Real Estate from Utah State University."
   },
