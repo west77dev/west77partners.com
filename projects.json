@@ -345,5 +345,41 @@
       "https://res.cloudinary.com/ddfrakts6/image/upload/w_1200,q_auto,f_auto/v1793300320/L101_Lobby_1_ia6qwt.jpg",
       "https://res.cloudinary.com/ddfrakts6/image/upload/w_1200,q_auto,f_auto/v1793300315/L101_FitnessCenter_3_rjxcbs.jpg"
     ]
+  },
+  {
+    "title": "LivAway Suites",
+    "location": "Hopewell, VA",
+    "type": "under-construction",
+    "summary": "",
+    "thumbnail": "https://res.cloudinary.com/ddfrakts6/image/upload/768-x-517_hxeczi.png",
+    "detail_image": null,
+    "gallery": []
+  },
+  {
+    "title": "LivAway Suites",
+    "location": "Mesa, AZ",
+    "type": "under-construction",
+    "summary": "",
+    "thumbnail": "https://res.cloudinary.com/ddfrakts6/image/upload/768-x-517_hxeczi.png",
+    "detail_image": null,
+    "gallery": []
+  },
+  {
+    "title": "LivAway Suites",
+    "location": "Las Vegas, NV",
+    "type": "under-construction",
+    "summary": "",
+    "thumbnail": "https://res.cloudinary.com/ddfrakts6/image/upload/768-x-517_hxeczi.png",
+    "detail_image": null,
+    "gallery": []
+  },
+  {
+    "title": "LivAway Suites",
+    "location": "Montgomery, AL",
+    "type": "under-construction",
+    "summary": "",
+    "thumbnail": "https://res.cloudinary.com/ddfrakts6/image/upload/768-x-517_hxeczi.png",
+    "detail_image": null,
+    "gallery": []
   }
 ]
