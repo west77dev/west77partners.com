@@ -244,5 +244,50 @@
     "thumbnail": "https://res.cloudinary.com/ddfrakts6/image/upload/20240228_LivAway_DRAPER-UT_knxtps.jpg",
     "detail_image": null,
     "gallery": []
+  },
+  {
+    "title": "LivAway Suites",
+    "location": "Surprise, AZ",
+    "type": "completed",
+    "summary": null,
+    "thumbnail": "https://res.cloudinary.com/ddfrakts6/image/upload/768-x-517_hxeczi.png",
+    "detail_image": null,
+    "gallery": []
+  },
+  {
+    "title": "LivAway Suites",
+    "location": "Tolleson, AZ",
+    "type": "completed",
+    "summary": null,
+    "thumbnail": "https://res.cloudinary.com/ddfrakts6/image/upload/768-x-517_hxeczi.png",
+    "detail_image": null,
+    "gallery": []
+  },
+  {
+    "title": "LivAway Suites",
+    "location": "San Marcos, TX",
+    "type": "completed",
+    "summary": null,
+    "thumbnail": "https://res.cloudinary.com/ddfrakts6/image/upload/768-x-517_hxeczi.png",
+    "detail_image": null,
+    "gallery": []
+  },
+  {
+    "title": "LivAway Suites",
+    "location": "Glendale, AZ",
+    "type": "completed",
+    "summary": null,
+    "thumbnail": "https://res.cloudinary.com/ddfrakts6/image/upload/768-x-517_hxeczi.png",
+    "detail_image": null,
+    "gallery": []
+  },
+  {
+    "title": "LivAway Suites",
+    "location": "Tucson, AZ",
+    "type": "completed",
+    "summary": null,
+    "thumbnail": "https://res.cloudinary.com/ddfrakts6/image/upload/768-x-517_hxeczi.png",
+    "detail_image": null,
+    "gallery": []
   }
 ]
