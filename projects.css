@@ -316,15 +316,15 @@
 }
 
 .pipeline-map__legend-dot--completed {
-  background: #c8a45a;
+  background: #e8772e;
 }
 
 .pipeline-map__legend-dot--construction {
-  background: #1e2837;
+  background: #d4a72c;
 }
 
 .pipeline-map__legend-dot--pipeline {
-  background: #1e2837;
+  background: #2f4e6d;
 }
 
 .pipeline-map__legend-label {
